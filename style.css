@@ -28,6 +28,7 @@ body {
     width: 100%;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
@@ -42,6 +43,9 @@ body {
 
 .btn {
     display: inline-block;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
     padding: 5px 15px;
     background: black;
     border: 2px solid cyan;
@@ -108,11 +112,14 @@ opacity: 1px;
 
 .nav-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .nav-links a {
     color: #fcfefe;
     text-decoration: none;
+    flex-wrap: wrap;
+    display: flex;
 
     font-size: 15px;
 
@@ -149,6 +156,7 @@ transform: translateY(-3px);
 }
 .explore-btn{
     display: inline-block;
+
 
     margin-top: 30px;
     padding: 14px 25px;
@@ -330,20 +338,27 @@ margin-bottom: 15px;
 }
 
 @media (max-width: 700px) {
+    .btn {
+        padding: 5px;
+        border-radius: 5px;
+    }
     .navbar {
         padding: 15px 5%;
+        width: 99%;
     }
     .logo {
         font-size: 18px;
     }
     .nav-links {
-        gap: 12px;
-    }
-    .nav-links span {
-        display: none;
+        gap: 5px;
+        justify-content: center;
     }
     .nav-links a {
-        font-size: 20px;
+        font-size: 15px;
+        display: inline-block;
+        text-align: center;
+
+    
     }
     .section h1 {
         font-size: 45px;
