@@ -1,8 +1,8 @@
-const menuBtn = 
-document. getElementById ("menu-btn");
-const navMenu = 
-document.getElementById ("nav-menu");
+ocument.addEventListener("DOMContentLoaded", () => {
+    const navToggle = document.getElementById("navToggle");
+    const navLinks = document.getElementById("navlinks");
 
-menuBtn.addEvenListtener ("click", function () {
-    navMenu.classList>toggle ("active");
+    navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
 });
